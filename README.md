@@ -1,1 +1,1 @@
-# ToDi create linux-scripts-apps-jenkins install Nootstrap
+# ToDo create linux-scripts-apps-jenkins install Bootstrap
