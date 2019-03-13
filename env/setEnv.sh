@@ -1,7 +1,7 @@
 # WILDFLY CONFIGURATION PARAMETERS
-pkg=wildfly
-wfAdmin=admin
-wfOwner=wildfly
-wfGroup=wildfly
-wfHome=/opt/wildfly
-wfLog=/var/log/wildfly
+pkg=jenkins
+jenkinsAdmin=admin
+jenkinsOwner=jenkins
+jenkinsGroup=jenkins
+jenkinsHome=/opt/jenkins
+jenkinsLog=/var/log/jenkins
