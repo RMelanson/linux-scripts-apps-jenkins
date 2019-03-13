@@ -1,5 +1,5 @@
 #!/bin/bash
-jbossBootCurrDir=$PWD
+jenkinsBootCurrDir=$PWD
 
 # Ensure script is running under root
 if [ "$EUID" -ne 0 ]
@@ -14,9 +14,9 @@ yum update -y
 yum install git -y
 
 #Set Cloning Properties
-pkg=JBOSS
-gitRepo="linux-scripts-apps-jboss.git $jbossDir"
-installDir="/tmp/scripts/apps/JBOSS"
+pkg=JENKINS
+gitRepo="linux-scripts-apps-jenkins"
+installDir="/tmp/scripts/apps/JENKINS"
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:RMelanson/"
 else
@@ -36,4 +36,4 @@ find . -name "*.sh" -exec chmod 700 {} \;
 # Setup Project
 ./setup.sh 2>&1| tee setup.log
 
-cd $jbossBootCurrDir
+cd $jenkinsBootCurrDir
