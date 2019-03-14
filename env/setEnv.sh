@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # JENKINS CONFIGURATION PARAMETERS
-pkg=jenkins
+pkg=JENKINS
 #jenkinsAdmin=admin
 #jenkinsOwner=jenkins
 #jenkinsGroup=jenkins
