@@ -6,8 +6,8 @@ echo Setup.sh:  EXECUTING . ./env/setEnv.sh
 . ./env/setEnv.sh
 
 #CHECK IF JENKINS INSTALLED AND RETURN IF INSTALLED
-echo Setup.sh:  EXECUTING . ./utils/exitIfInstalled.sh $jenkinsHome
-. ./utils/exitIfInstalled.sh $jenkinsHome
+echo Setup.sh:  EXECUTING . ./utils/exitIfInstalled.sh $jenkinsLock
+. ./utils/exitIfInstalled.sh $jenkinsLock
 
 # DOWNLOAD AND INSTALL JENKINS 10
 echo Setup.sh:  EXECUTING . ./installs/installJenkins.sh
