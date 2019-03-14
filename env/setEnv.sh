@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # WILDFLY CONFIGURATION PARAMETERS
 pkg=jenkins
 #jenkinsAdmin=admin
