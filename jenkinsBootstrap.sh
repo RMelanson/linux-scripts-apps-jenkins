@@ -16,8 +16,6 @@ yum install git -y
 # SETUP ENVIRONMENT AND PARAMETERS
 . ./env/setEnv.sh
 
-gitRepo="linux-scripts-apps-jenkins"
-installDir="/tmp/scripts/apps/JENKINS"
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:RMelanson/"
 else
