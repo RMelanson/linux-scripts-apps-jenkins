@@ -2,9 +2,6 @@
 
 # JENKINS CONFIGURATION PARAMETERS
 pkg=JENKINS
-#jenkinsAdmin=admin
-#jenkinsOwner=jenkins
-#jenkinsGroup=jenkins
-#jenkinsHome=/opt/jenkins
-#jenkinsLog=/var/log/jenkins
+gitRepo="linux-scripts-apps-jenkins"
+installDir="/tmp/scripts/apps/$pkg"
 jenkinsLock=/var/lock/subsys/jenkins
