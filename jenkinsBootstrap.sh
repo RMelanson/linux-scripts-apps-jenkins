@@ -1,5 +1,4 @@
 #!/bin/bash
-jenkinsBootCurrDir=$PWD
 
 # Ensure script is running under root
 if [ "$EUID" -ne 0 ]
@@ -14,7 +13,10 @@ yum update -y
 yum install git -y
 
 # SETUP ENVIRONMENT AND PARAMETERS
-. ./env/setEnv.sh
+jenkinsBootCurrDir=$PWD
+pkg=JENKINS
+gitRepo="linux-scripts-apps-jenkins"
+installDir="/tmp/scripts/apps/$pkg"
 
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:RMelanson/"
