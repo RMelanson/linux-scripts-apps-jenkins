@@ -15,7 +15,7 @@ yum install git -y
 # SETUP ENVIRONMENT AND PARAMETERS
 jenkinsBootCurrDir=$PWD
 pkg=JENKINS
-gitRepo="linux-scripts-apps-jenkins"
+gitRepo="linux-scripts-apps-jenkins.git"
 installDir="/tmp/scripts/apps/$pkg"
 
 if [ -f ~/.ssh/gitHub.key ]; then
