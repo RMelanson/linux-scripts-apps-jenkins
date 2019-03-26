@@ -18,5 +18,6 @@ echo Setup.sh:  EXECUTING . ./installs/installJenkins.sh
 . ./installs/installJenkins.sh
 
 # START JENKINS AS A SERVICE
-echo Setup.sh:  EXECUTING service jenkins start
-service jenkins start
+
+echo Setup.sh:  EXECUTING . ./installs/addJenkinsService.sh $JENKINS_SERVER
+. ./installs/addJenkinsService.sh $JENKINS_SERVER
