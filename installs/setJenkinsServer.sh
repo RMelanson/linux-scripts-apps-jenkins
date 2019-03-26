@@ -16,6 +16,9 @@ case "$server" in
    JBOSS)
         echo INSTALLING JBOSS SERVER 
         ./installs/jbossbootstrap.sh
+        JBOSS_DEPLOYMENT_DIR=/opt/wildfly/standalone/deployments
+        echo EXECUTING DEPLOYMENT: cp $JENKINS_WAR $JBOSS_DEPLOYMENT_DIR
+        cp $JENKINS_WAR $JBOSS_DEPLOYMENT_DIR
    ;;
    WEBLOGIC)
         echo $server not yet implemented 
