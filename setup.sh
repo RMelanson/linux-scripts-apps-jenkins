@@ -17,6 +17,6 @@ echo Setup.sh:  EXECUTING . ./installs/installJava8.sh
 echo Setup.sh:  EXECUTING . ./installs/installJenkins.sh
 . ./installs/installJenkins.sh
 
-# START JENKINS SERVICE
+# START JENKINS AS A SERVICE
 echo Setup.sh:  EXECUTING service jenkins start
 service jenkins start
