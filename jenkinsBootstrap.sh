@@ -30,7 +30,7 @@ $clone$gitRepo $installDir
 
 # Setup $pkg
 cd $installDir
-cp jenkinsBootstrap.sh ..
+cp jenkinsBootstrap.sh ../reinstallJenkins.sh
 mv reinstall.sh ..
 
 # MAKE ALL SHELL SCRIPTS EXECUTABLE TO ROOT ONLY
