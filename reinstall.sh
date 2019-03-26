@@ -5,4 +5,4 @@
 clear
 echo Setup.sh:  EXECUTING . ./env/reinstall.sh
 . ./env/setEnv.sh
-
+$bootstrap
