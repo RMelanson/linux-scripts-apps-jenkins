@@ -2,7 +2,7 @@
 
 # JENKINS CONFIGURATION PARAMETERS
 pkg=JENKINS
-bootstrap=". linux-scripts-apps-jenkins"
+bootstrap=". jenkinsBootstrap.sh"
 gitRepo="linux-scripts-apps-jenkins"
 installDir="/tmp/scripts/apps/$pkg"
 jenkinsLock=/var/lock/subsys/jenkins
