@@ -3,10 +3,10 @@
 
 # SETUP WILDFLY CONFIGURATION ENVIRONMENT AND PARAMETERS
 clear
-echo reinstall.sh:  EXECUTING . ./env/reinstall.sh
+echo reinstall.sh:  EXECUTING ENVIRONMENT SETUP: . ./env/setEnv.sh
 . ./env/setEnv.sh
 
-echo reinstall.sh:  EXECUTING rm -rf $pkg
-rm -rf $pkg
-echo reinstall.sh:  EXECUTING $bootstrap
+echo reinstall.sh:  EXECUTING REMOVE OLD INSTALLATION: rm -rf $installDir
+rm -rf $installDir
+echo reinstall.sh:  EXECUTING BOOTSTRAP: $bootstrap
 $bootstrap
