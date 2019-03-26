@@ -1,1 +1,8 @@
+#! /bin/bash
+# INSTALL JENKINS ON LINUX WITH REMOTE ACCESS AS A SERVICE
+
+# SETUP WILDFLY CONFIGURATION ENVIRONMENT AND PARAMETERS
 clear
+echo Setup.sh:  EXECUTING . ./env/reinstall.sh
+. ./env/setEnv.sh
+
