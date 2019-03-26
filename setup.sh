@@ -9,6 +9,10 @@ echo Setup.sh:  EXECUTING . ./env/setEnv.sh
 echo Setup.sh:  EXECUTING . ./utils/exitIfInstalled.sh $jenkinsLock
 . ./utils/exitIfInstalled.sh $jenkinsLock
 
+#INSTALL JAVA 8
+echo Setup.sh:  EXECUTING . ./installs/installJava8.sh
+. ./installs/installJava8.sh
+
 # DOWNLOAD AND INSTALL JENKINS 10
 echo Setup.sh:  EXECUTING . ./installs/installJenkins.sh
 . ./installs/installJenkins.sh
