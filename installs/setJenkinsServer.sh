@@ -14,7 +14,8 @@ case "$server" in
         echo $server not yet implemented 
    ;;
    JBOSS)
-        echo $server not yet implemented 
+        echo INSTALLING JBOSS SERVER 
+        ./installs/jbossbootstrap.sh
    ;;
    WEBLOGIC)
         echo $server not yet implemented 
