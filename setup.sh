@@ -5,6 +5,9 @@
 echo Setup.sh:  EXECUTING . ./env/setEnv.sh
 . ./env/setEnv.sh
 
+# COPY RESTORE 
+cp $pkg_RESTORE.sh ..
+
 #CHECK IF JENKINS INSTALLED AND RETURN IF INSTALLED
 echo Setup.sh:  EXECUTING . ./utils/exitIfInstalled.sh $jenkinsLock
 . ./utils/exitIfInstalled.sh $jenkinsLock
