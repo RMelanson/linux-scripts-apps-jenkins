@@ -1,11 +1,20 @@
 #!/bin/bash
 
 # Ensure script is running under root
+bootstrap=$webCurrDir/jenkinsBootstrap.sh
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root or under sudo"
-  return -1
-fi
+then
+   sudo -n true 2/dev/null 2>&1
+   passwordRequired=$?
 
+   if [ "$passwordRequired" == "1" ]; then
+       echo "Please run as root or under user with sudo access sudo"
+   else
+       sudo chmod +x $bootstrap
+       sudo $bootstrap
+   fi
+   return 1
+fi
 #INITIAL BASIC TOOLS INSTALL
 yum update -y
 
@@ -37,4 +46,4 @@ find . -name "*.sh" -exec chmod 700 {} \;
 # Setup Project
 ./setup.sh 2>&1| tee setup.log
 
-cd $jenkinsBootCurrDir
+cd $bootstrapDir
