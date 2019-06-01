@@ -3,7 +3,7 @@
 
 # SETUP WILDFLY CONFIGURATION ENVIRONMENT AND PARAMETERS
 echo Setup.sh:  EXECUTING . ./env/setEnv.sh
-. ./env/setEnv.sh
+. ./env/setEnv.sh $*
 
 # COPY RESTORE 
 cp $pkg_RESTORE.sh ..
