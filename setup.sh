@@ -2,7 +2,7 @@
 # INSTALL JENKINS ON LINUX WITH REMOTE ACCESS AS A SERVICE
 
 # SETUP WILDFLY CONFIGURATION ENVIRONMENT AND PARAMETERS
-echo Setup.sh:  EXECUTING . ./env/setEnv.sh
+echo "$setupName: EXECUTING: . ./env/setEnv.sh $*"
 . ./env/setEnv.sh $*
 
 # COPY RESTORE 
