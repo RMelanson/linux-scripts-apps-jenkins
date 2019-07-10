@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # JENKINS CONFIGURATION PARAMETERS
-bootstrap="jenkinsBootstrap.sh"
 gitRepo="linux-scripts-apps-jenkins"
 
 #SET UP INSTALLATION DIRECTORY`
